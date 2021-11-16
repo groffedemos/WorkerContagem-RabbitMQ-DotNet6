@@ -63,6 +63,8 @@ public class Worker : BackgroundService
     private void ProcessarResultado(
         object? sender, BasicDeliverEventArgs e)
     {
+        Thread.Sleep(3000);
+        
         var dados = Encoding.UTF8.GetString(e.Body.ToArray());
         _logger.LogInformation(
             $"[{_queue} | Nova mensagem] " + dados);
