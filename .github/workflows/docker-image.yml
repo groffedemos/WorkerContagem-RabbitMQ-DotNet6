@@ -8,7 +8,7 @@ on:
 
 env:
   DIR_WEBAPP: ./WorkerContagem
-  IMAGEM_DOCKERHUB: ${{ secrets.DOCKERHUB_USERNAME }}/workercontagem-rabbitmq-dotnet6
+  IMAGEM_DOCKERHUB: ${{ secrets.DOCKERHUB_USERNAME }}/workercontagem-rabbitmq-dotnet6-testes
   
 jobs:
 
